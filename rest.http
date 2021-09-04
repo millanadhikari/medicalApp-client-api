@@ -1,0 +1,18 @@
+###User Sign up endpoint
+POST http://localhost:3001/v1/user
+Content-Type: application/json
+
+{
+    "name": "Shree Ram",
+    "email": "df@gmail.com",
+    "password": "Mana3dfdfdfdf"
+}
+
+###User Sign In endpoint
+POST http://localhost:3001/v1/user/login
+Content-Type: application/json
+
+{
+    "email": "df@gmail.com",
+    "password": "Mana3dfdfdfdf"
+}
