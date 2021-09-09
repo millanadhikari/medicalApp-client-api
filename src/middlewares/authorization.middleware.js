@@ -5,7 +5,6 @@ const userAuthorization = async (req, res, next) => {
   const { authorization } = req.headers;
 
   const decoded = await verifyAccessJWT(authorization);
-  console.log(decoded);
 
   if (decoded.email) {
     const userId = await getJWT(authorization);
