@@ -3,9 +3,9 @@ POST http://localhost:3001/v1/user
 Content-Type: application/json
 
 {
-    "name": "Shree Ram",
-    "email": "df@gmail.com",
-    "password": "Mana3dfdfdfdf"
+    "name": "Sadhguru Ram",
+    "email": "Sadhguru@gmail.com",
+    "password": "manakamana123"
 }
 
 ###User Sign In endpoint
@@ -13,6 +13,30 @@ POST http://localhost:3001/v1/user/login
 Content-Type: application/json
 
 {
-    "email": "df@gmail.com",
-    "password": "Mana3dfdfdfdf"
+    "email": "Sadhguru@gmail.com",
+    "password": "manakamana123"
 }
+
+###Get a user profile endpoint
+GET http://localhost:3001/v1/user
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhZGhndXJ1QGdtYWlsLmNvbSIsIl9pZCI6IjYxMzczNjM1MjNlYjdlZWIxZTcxMzc3MiIsImlhdCI6MTYzMTE4MzEyMSwiZXhwIjoxNjMxMTg0MDIxfQ.Bcm_aoEFfdm8VD41cRAPjEkLRjUbBTn0kVZIU0KOSMQ
+
+
+### Token routers
+
+### Get refreshed tokens from
+GET http://localhost:3001/v1/tokens
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhZGhndXJ1QGdtYWlsLmNvbSIsIl9pZCI6IjYxMzczNjM1MjNlYjdlZWIxZTcxMzc3MiIsImlhdCI6MTYzMTE4MjcwNiwiZXhwIjoxNjMxMTgzNjA2fQ.geKzLjA148ehVbbm9zFswfDQC94uesnlN2y2s_llQRM
+
+      
+###Password reset endpoints
+POST http://localhost:3001/v1/user/reset-password
+Content-Type: application/json
+
+{
+    "email": "Sadhguru@gmail.com"
+}
+
+###User Logout Endpoint   
+DELETE http://localhost:3001/v1/user/logout
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhZGhndXJ1QGdtYWlsLmNvbSIsIl9pZCI6IjYxMzczNjM1MjNlYjdlZWIxZTcxMzc3MiIsImlhdCI6MTYzMTE4MzEyMSwiZXhwIjoxNjMxMTg0MDIxfQ.Bcm_aoEFfdm8VD41cRAPjEkLRjUbBTn0kVZIU0KOSMQ

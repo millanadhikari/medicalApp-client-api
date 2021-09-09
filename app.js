@@ -33,9 +33,11 @@ app.use(bodyParser.json());
 
 const userRouter = require("./src/routers/user.router");
 const patientRouter = require("./src/routers/patient.router");
+const tokensRouter = require("./src/routers/tokens.router.js");
 
 app.use("/v1/user", userRouter);
 app.use("/v1/patient", patientRouter);
+app.use("/v1/tokens", tokensRouter);
 
 app.use((req, res, next) => {
     const error = new Error("Resources not found")    

@@ -43,6 +43,18 @@ const UserSchema = new Schema({
 
             }
         }
+    }, 
+    refreshJWT: {
+        token: {
+            type: String,
+            maxlength: 500,
+            default: ''
+        }, 
+        addedAt: {
+            type: Date,
+            required: true,
+            default: Date.now(),
+        }
     }
 })
 

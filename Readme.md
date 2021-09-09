@@ -9,7 +9,7 @@ User API Resources
 All the user API router follows /v1/user/ -->
 
 |#	| Routers |	Verbs |	Progress |	Is Private |	Description
-1	/v1/user	GET	Done	Yes	Get user Info
+|1	| /v1/user |	GET	| Done |Yes	 | Get user Info
 2	/v1/user	POST	Done	No	Create a user
 3	/v1/user/login	POST	Done	No	Verify user Authentication and return JWT
 4	/v1/user/reset-password	POST	Done	No	Verify email and email pin to reset the password
